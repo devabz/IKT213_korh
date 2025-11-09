@@ -39,8 +39,8 @@ def hsv(image):
     return cv2.cvtColor(image, cv2.COLOR_RGB2HSV)
 
 def hue_shifted(image, emptyPictureArray, hue): 
-    emptyPictureArray[:] = np.clip(image[:].astype(int) + hue, a_min=0, a_max=255).astype(np.uint8)
-    return emptyPictureArray
+    # emptyPictureArray[:] = np.clip(image[:].astype(int) + hue, a_min=0, a_max=255).astype(np.uint8)
+    # return emptyPictureArray
 
     # ChatGPT
     img_hsv = hsv(image).astype(np.uint16)
